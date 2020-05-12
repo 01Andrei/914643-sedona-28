@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [ANDREI KASTSEYEU](https://up.htmlacademy.ru/htmlcss/28/user/914643).
-* Наставник: [Андрей Островский](https://up.htmlacademy.ru/htmlcss/28/user/914643).
+* Наставник: [Андрей Островский](https://htmlacademy.ru/profile/grandmaus).
 
 ---
 
