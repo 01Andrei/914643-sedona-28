@@ -111,8 +111,48 @@
           <p>Укажите предполагаемые даты поездки,<br> 
           и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <button class="searh-hotel">Поиск гостиницы в Седоне</button>
+          <a class="searh-hotel" href="#">Поиск гостиницы в Седоне</a>
         </section>
+<!-- модальное окно -->
+<div class="modal">
+  <form action="#" method="get">
+    <div class="arrive-date">
+      <label for="arrive-date">Дата заезда:</label>
+      <div class="modal-input-container">
+        <input type="text" name="arrive-date" id="arrive-date" value="24 Апреля 2017">
+        <button type="button"> 
+          <img src="#" width="21" height="23" alt="Календарь">> 
+        </button>
+      </div>
+    </div>
+    <div class="departure-date">
+      <label for="departure-date">Дата отъезда:</label>
+      <div class="modal-input-container">
+        <input type="text" name="departure-date" id="departure-date" value="4 июля 2016">
+        <button class="calendar" type="button" title="Календарь">Календарь</button>
+      </div>
+    </div>
+    <div class="adults">
+      <label for="adults">Взрослые:</label>
+      <div class="quantity-controls">
+        <button class="quantity-less" type="button" title="Меньше">Меньше</button>
+        <input type="text" name="adults" id="adults" value="2">
+        <button class="quantity-more" type="button" title="Больше">Больше</button>
+      </div>
+    </div>
+    <div class="children">
+      <label for="children">Дети:</label>
+      <div class="quantity-controls">
+        <button class="quantity-less" type="button" title="Меньше">Меньше</button>
+        <input type="text" name="children" id="children" value="0">
+        <button class="quantity-more" type="button" title="Больше">Больше</button>
+      </div>
+    </div>
+    <button class="btn modal-search-btn" type="submit">
+      Найти
+    </button>
+  </form>
+</div>
 
         <div class="map"></div>
 
