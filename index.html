@@ -101,6 +101,51 @@
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
           <button type="button">Поиск гостиницы в Седоне</button>
+          <div>
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <div>
+                <label for="start">Дата заезда:</label>
+                <div>
+                  <input type="text" name="start" id="start" value="24 апреля 2017">
+                  <button type="button">
+                    <span class="visually-hidden">Календарь</span>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <label for="finish">Дата выезда:</label>
+                <div>
+                  <input type="text" name="finish" id="finish" value="4 июля 2017">
+                  <button type="button">
+                    <span class="visually-hidden">Календарь</span>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <label for="adult">Взрослые:</label>
+                  <button type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                  </button>
+                  <input type="text" id="adult" name="adult" value="2">
+                  <button type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                  </button>
+                </div>
+                <div>
+                  <label for="child">Дети:</label>
+                  <button type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                  </button>
+                  <input type="text" id="child" name="child" value="0">
+                  <button type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                  </button>
+                </div>
+              </div>
+              <button class="btn search_btn" type="submit">Найти</button>
+            </form>
+          </div>
         </section>
         <div></div>
     </main>
