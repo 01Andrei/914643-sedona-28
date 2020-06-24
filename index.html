@@ -107,8 +107,8 @@
                 <label for="start">Дата заезда:</label>
                 <div>
                   <input type="text" name="start" id="start" value="24 апреля 2017">
-                  <button type="button">
-                    <span class="visually-hidden">Календарь</span>
+                  <button type="button" aria-label="Выбор даты с использованием календаря">
+                    <img src="img/calendar.svg" width="21" height="23" alt="календарь">
                   </button>
                 </div>
               </div>
@@ -116,34 +116,26 @@
                 <label for="finish">Дата выезда:</label>
                 <div>
                   <input type="text" name="finish" id="finish" value="4 июля 2017">
-                  <button type="button">
-                    <span class="visually-hidden">Календарь</span>
+                  <button type="button" aria-label="выбор даты с использованием календаря">
+                    <img src="img/calendar.svg" width="21" height="23" alt="календарь">
                   </button>
                 </div>
               </div>
               <div>
                 <div>
                   <label for="adult">Взрослые:</label>
-                  <button type="button">
-                    <span class="visually-hidden">Уменьшить количество</span>
-                  </button>
+                  <button type="button" aria-label="уменьшить количество"></button>
                   <input type="text" id="adult" name="adult" value="2">
-                  <button type="button">
-                    <span class="visually-hidden">Увеличить количество</span>
-                  </button>
+                  <button type="button" aria-label="Увеличить количество"></button>
                 </div>
                 <div>
                   <label for="child">Дети:</label>
-                  <button type="button">
-                    <span class="visually-hidden">Уменьшить количество</span>
-                  </button>
+                  <button type="button" aria-label="уменьшить количество"></button>
                   <input type="text" id="child" name="child" value="0">
-                  <button type="button">
-                    <span class="visually-hidden">Увеличить количество</span>
-                  </button>
+                  <button type="button" aria-label="увеличить количество"></button>
                 </div>
               </div>
-              <button class="btn search_btn" type="submit">Найти</button>
+              <button class="btn search-btn" type="submit">Найти</button>
             </form>
           </div>
         </section>
