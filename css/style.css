@@ -49,14 +49,14 @@ img {
     background-color: var(--basic-white-background-and-font);
 }
 
-.site-navigation {
+.site-navigation a {
     list-style: none;
     color: var(--basic-black-font);  
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-	color: var(--basic-black-font);
+	color: var(--basic-blue-light-btn-search-links-and-social-icon);
 }
 
 .site-navigation a:active {
@@ -66,4 +66,47 @@ img {
 
 .nav-active {
     color: var(--basic-brown-light-btn-search-and-links);
+}
+
+.intro-img {
+    background-color: var(--basic-blue-light-btn-search-links-and-social-icon);
+    background-image: url("../img/background-photo-index.jpg");
+    text-align: center;   
+}
+
+.inro-text h1{
+    font-weight: 700;
+    font-size: 21px;
+   }
+
+.inro-text p{
+    color: var(--basic-light-black-font);
+}
+
+/*  Search */
+.search {
+    background-color: var(--basic-white-background-and-font);
+}
+
+.search h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.search p {
+    line-height: 24px;
+    color: var(--basic-light-black-font);
+}
+
+.search-btn {
+    font: inherit;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    background-color: var(--basic-brown-light-btn-search-and-links);
+    font-size: 21px;
+    color: var(--basic-white-background-and-font);
+    border: none;
 }
