@@ -88,6 +88,10 @@ img {
     background-image: url("../img/background-photo-index.jpg");
     background-repeat: no-repeat;
     }
+
+.intro-img::after {
+        content: url("../img/intro-mask.svg");
+    }
     
 .inro-text h1{
     font-weight: 700;
@@ -139,6 +143,7 @@ img {
 	opacity: 0.3;
 }
 
+/* Footer */
 
 .footer {
     background-color: var(--basic-white-background-and-font)
@@ -187,6 +192,7 @@ img {
 	opacity: 0.3;
 }
 
+
 .copyright {
     text-align: center;
 }
@@ -212,12 +218,6 @@ img {
     border-color: var(--grey-border);
 }
 
-.hotel-image {
-    background-color: var(--grey-logo);
-}
-
-
-.hotel-description
 
 .hotel-link {
     font-weight: 700;
@@ -305,3 +305,4 @@ background-color: var(--basic-grey-light-input-an-rating);
 .stars-2::before {
     content: url("../img/stars-2.svg"); 
 }
+
