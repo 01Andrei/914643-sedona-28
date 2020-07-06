@@ -18,6 +18,7 @@
     --grey-icon: #a9a9a9;
     --grey-logo: #bdbbbc;
     --grey-chekbox: #6a6a6a;
+    --grey-border: #E5E5E5;
     --main-footer: rgba(255, 255, 255, 0.9);
 }
 
@@ -203,19 +204,104 @@ img {
     display: none
 }
 
-.hotel
+/* HOTELS */
+
+.hotel {
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: var(--grey-border);
+}
+
+.hotel-image {
+    background-color: var(--grey-logo);
+}
+
 
 .hotel-description
 
-.hotel-link
+.hotel-link {
+    font-weight: 700;
+    font-size: 21px;
+    color: var(--basic-black-font);
+}
 
-.hotel-type-price 
+.hotel-link:hover,
+.hotel-link:focus {
+    color: var(--basic-blue-light-btn-search-links-and-social-icon);
+}
 
-.btn-details
+.hotel-link:active {
+	color: var(--basic-black-font);
+	opacity: 0.3;
+}
 
-.btn-reserve
+.hotel-type-price {
+    line-height: 21px;
+    color: var(--basic-light-black-font);
+}
 
-.stars::before {
-    content: "";
-    background-image: url("../img/star.svg");
+.btn-details {
+    color: var(--basic-white-background-and-font);
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--basic-blue-light-btn-search-links-and-social-icon);
+}
+
+.btn-details:hover,
+.btn-details:focus {
+    background-color: var(--dark-blue-hover-focus);
+}
+
+.btn-details:active {
+    background-color: var(--deep-dark-blue);
+    
+}
+
+.btn-details:active span {
+    opacity: 0.3;
+}
+
+.btn-reserve {
+    color: var(--basic-white-background-and-font);
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--basic-brown-light-btn-search-and-links);
+
+}
+
+.btn-reserve:hover,
+.btn-reserve:focus {
+    background-color: var(--dark-brown-hover-focus);
+}
+
+.btn-reserve:active {
+    background-color: var(--deep-dark-brown);  
+}
+    
+.btn-reserve:active span {
+    opacity: 0.3;
+}
+
+.rating-value {
+background-color: var(--basic-grey-light-input-an-rating);
+}
+
+.rating-value span {
+    color: var(--basic-grey-rating);
+    line-height: 21px;
+    text-align: center;
+}
+
+.stars-4::before {
+    content: url("../img/stars-4.svg"); 
+}
+
+.stars-3::before {
+    content: url("../img/stars-3.svg"); 
+}
+
+.stars-2::before {
+    content: url("../img/stars-2.svg"); 
 }
