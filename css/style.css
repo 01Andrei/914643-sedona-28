@@ -190,8 +190,21 @@ img {
 
 .social a:active path {
 	opacity: 0.3;
-}
+} 
 
+
+/* попытка вставки свг через псевдоэлемент (несрабатывает) */
+
+/* .twitter-icon::after {
+    content: "";
+    background-color: var(--basic-blue-light-btn-search-links-and-social-icon);
+    background-image: url(../img/twitter.svg);
+} */
+    
+
+/* еще пример находил такой, но он тоже не срабатывает:
+.some-element::after {
+    content: url('data:image/svg+xml; base64, <тут_закодированный_svg>'); */
 
 .copyright {
     text-align: center;
