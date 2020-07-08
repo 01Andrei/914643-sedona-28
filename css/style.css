@@ -1,52 +1,50 @@
 /* Variables */
 
 :root {
-    --basic-white-background-and-font: #ffffff;
-    --basic-black-font: #000000;
-    --basic-light-black-font: #333333;
-    --basic-grey-background-features: #eeeeee;
-    --basic-brown-light-btn-search-and-links: #766357;
-    --basic-grey-light-input-an-rating: #f2f2f2;
-    --basic-blue-light-btn-search-links-and-social-icon: #81b3d2;
-    --basic-grey-rating: #666666;
-    --basic-grey-arrow: #cacaca;
-    --dark-blue-hover-focus: #669ec0;
-    --dark-brown-hover-focus: #604e43;
-    --deep-dark-blue: #5496bd;
-    --deep-dark-brown: #503e33;
+    --basic-white: #ffffff;
+    --basic-black: #000000;
+    --light-black: #333333;
+    --basic-brown: #604e43;
+    --light-brown: #766357;
+    --dark-brown: #503e33;
+    --basic-blue: #669ec0;
+    --light-blue: #81b3d2;
+    --dark-blue: #5496bd;
+    --grey-features: #eeeeee;
+    --grey-input-an-rating: #f2f2f2;
+    --grey-rating-text: #666666;
+    --grey-arrow: #cacaca;   
     --grey-form-hover: #ebebeb;
     --grey-icon: #a9a9a9;
     --grey-logo: #bdbbbc;
     --grey-chekbox: #6a6a6a;
     --grey-border: #E5E5E5;
-    --main-footer: rgba(255, 255, 255, 0.9);
+    --white-main-footer: rgba(255, 255, 255, 0.9);
 }
 
 /* Global */
 
 body {
     min-width: 1200px;
-    margin: 0;
-    padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
-    color: var(--basic-black-font);
+    color: var(--basic-black);
     text-transform: uppercase;
-    }
+}
 
 a {
     text-decoration: none;
 }
-  
+
 img {
     max-width: 100%;
     height: auto;
 }
 
 .visually-hidden {
-	position: absolute;
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -58,7 +56,7 @@ img {
 
 .main-navigation {
     font-weight: 700;
-    background-color: var(--basic-white-background-and-font);
+    background-color: var(--basic-white);
 }
 
 .site-navigation {
@@ -66,45 +64,46 @@ img {
 }
 
 .site-navigation a {
-    color: var(--basic-black-font);  
+    color: var(--basic-black);  
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-	color: var(--basic-blue-light-btn-search-links-and-social-icon);
+	color: var(--light-blue);
 }
 
 .site-navigation a:active {
-	color: var(--basic-black-font);
+	color: var(--basic-black);
 	opacity: 0.3;
 }
 
 .site-navigation .nav-active {
-    color: var(--basic-brown-light-btn-search-and-links);
+    color: var(--light-brown);
 }
 
 .intro-img {
-    background-color: var(--basic-blue-light-btn-search-links-and-social-icon);
+    background-color: var(--light-blue);
     background-image: url("../img/background-photo-index.jpg");
     background-repeat: no-repeat;
-    }
+}
 
 .intro-img::after {
         content: url("../img/intro-mask.svg");
-    }
-    
-.inro-text h1{
+}
+
+.inro-text h1 {
     font-weight: 700;
     font-size: 21px;
-   }
+}
 
-.inro-text p{
-    color: var(--basic-light-black-font);
+.inro-text p {
+    color: var(--light-black);
 }
 
 /*  Search */
+
 .search {
-    background-color: var(--basic-white-background-and-font);
+    background-color: var(--basic-white);
 }
 
 .search h2 {
@@ -115,7 +114,7 @@ img {
 
 .search p {
     line-height: 24px;
-    color: var(--basic-light-black-font);
+    color: var(--light-black);
 }
 
 .search-btn {
@@ -124,33 +123,33 @@ img {
     text-align: center;
     text-transform: uppercase;
     vertical-align: middle;
-    background-color: var(--basic-brown-light-btn-search-and-links);
+    background-color: var(--light-brown);
     font-size: 21px;
-    color: var(--basic-white-background-and-font);
+    color: var(--basic-white);
     border: none;
 }
 
 .search-btn:hover,
 .search-btn:focus {
-    background-color: var(--dark-brown-hover-focus);
+    background-color: var(--basic-brown);
 }
 
 .search-btn:active {
-	background-color: var(--deep-dark-brown);
+	background-color: var(--dark-brown);
 }
 
-.search-btn:active span {
+.search-btn span:active {
 	opacity: 0.3;
 }
 
 /* Footer */
 
 .footer {
-    background-color: var(--basic-white-background-and-font)
+    background-color: var(--basic-white);
 }
 
 .footer .main-footer {
-    background-color: var(--main-footer);
+    background-color: var(--white-main-footer);
 }
 
 .footer-contacts {
@@ -164,7 +163,7 @@ img {
 
 .footer-contacts a {
     font: inherit;
-    color: var(--basic-black-font);
+    color: var(--basic-black);
     font-weight: 700;
     font-size: 21px;
 }
@@ -175,36 +174,35 @@ img {
 }
 
 .social a {
-    background-color: var(--basic-blue-light-btn-search-links-and-social-icon);
+    background-color: var(--light-blue);
 }
-
 
 .social a:hover,
 .social a:focus {
-	background-color: var(--dark-blue-hover-focus);
+	background-color: var(--basic-blue);
 }
 
 .social a:active {
-	background-color: var(--deep-dark-blue);
+	background-color: var(--dark-blue);
 }
 
-.social a:active path {
-	opacity: 0.3;
-} 
+.twitter-link::after {
+    content: url(../img/twitter.svg); 
+}
 
+.facebook-link::after {
+    content: url(../img/fb.svg); 
+}
 
-/* попытка вставки свг через псевдоэлемент (несрабатывает) */
+.youtube-link::after {
+    content: url(../img/youtube.svg); 
+}
 
-/* .twitter-icon::after {
-    content: "";
-    background-color: var(--basic-blue-light-btn-search-links-and-social-icon);
-    background-image: url(../img/twitter.svg);
-} */
-    
-
-/* еще пример находил такой, но он тоже не срабатывает:
-.some-element::after {
-    content: url('data:image/svg+xml; base64, <тут_закодированный_svg>'); */
+.twitter-link::after:active,
+.facebook-link::after:active,
+.youtube-link::after:active {
+    opacity: 0.3;
+}
 
 .copyright {
     text-align: center;
@@ -212,7 +210,7 @@ img {
 
 .copyright a:hover path,
 .copyright a:focus path {
-	fill: var(--basic-blue-light-btn-search-links-and-social-icon);
+	fill: var(--light-blue);
 }
 
 .copyright a:active path {
@@ -220,10 +218,10 @@ img {
 }
 
 .search-modal {
-    display: none
+    display: none;
 }
 
-/* HOTELS */
+/* Hotels */
 
 .hotel {
     border-width: 0px 0px 1px 0px;
@@ -231,91 +229,75 @@ img {
     border-color: var(--grey-border);
 }
 
-
 .hotel-link {
     font-weight: 700;
     font-size: 21px;
-    color: var(--basic-black-font);
+    color: var(--basic-black);
 }
 
 .hotel-link:hover,
 .hotel-link:focus {
-    color: var(--basic-blue-light-btn-search-links-and-social-icon);
+    color: var(--light-blue);
 }
 
 .hotel-link:active {
-	color: var(--basic-black-font);
+	color: var(--basic-black);
 	opacity: 0.3;
 }
 
 .hotel-type-price {
     line-height: 21px;
-    color: var(--basic-light-black-font);
+    color: var(--light-black);
 }
 
 .btn-details {
-    color: var(--basic-white-background-and-font);
+    color: var(--basic-white);
     line-height: 21px;
     font-weight: 700;
     text-align: center;
-    background-color: var(--basic-blue-light-btn-search-links-and-social-icon);
+    background-color: var(--light-blue);
 }
 
 .btn-details:hover,
 .btn-details:focus {
-    background-color: var(--dark-blue-hover-focus);
+    background-color: var(--basic-blue);
 }
 
 .btn-details:active {
-    background-color: var(--deep-dark-blue);
-    
+    background-color: var(--dark-blue);
 }
 
-.btn-details:active span {
+.btn-details span:active {
     opacity: 0.3;
 }
 
 .btn-reserve {
-    color: var(--basic-white-background-and-font);
+    color: var(--basic-white);
     line-height: 21px;
     font-weight: 700;
     text-align: center;
-    background-color: var(--basic-brown-light-btn-search-and-links);
-
+    background-color: var(--light-brown);
 }
 
 .btn-reserve:hover,
 .btn-reserve:focus {
-    background-color: var(--dark-brown-hover-focus);
+    background-color: var(--basic-brown);
 }
 
 .btn-reserve:active {
-    background-color: var(--deep-dark-brown);  
+    background-color: var(--dark-brown);  
 }
-    
-.btn-reserve:active span {
+
+.btn-reserve span:active {
     opacity: 0.3;
 }
 
 .rating-value {
-background-color: var(--basic-grey-light-input-an-rating);
+    background-color: var(--grey-input-an-rating);
 }
 
-.rating-value span {
-    color: var(--basic-grey-rating);
+.rating-value {
+    color: var(--grey-rating-text);
     line-height: 21px;
     text-align: center;
 }
-
-.stars-4::before {
-    content: url("../img/stars-4.svg"); 
-}
-
-.stars-3::before {
-    content: url("../img/stars-3.svg"); 
-}
-
-.stars-2::before {
-    content: url("../img/stars-2.svg"); 
-}
-
