@@ -19,6 +19,7 @@
     --grey-logo: #bdbbbc;
     --grey-chekbox: #6a6a6a;
     --grey-border: #E5E5E5;
+    --white-active: rgba(255, 255, 255, 0.3);
     --white-main-footer: rgba(255, 255, 255, 0.9);
 }
 
@@ -135,11 +136,8 @@ img {
 }
 
 .search-btn:active {
-	background-color: var(--dark-brown);
-}
-
-.search-btn span:active {
-	opacity: 0.3;
+color: var(--white-active);
+background-color: var(--dark-brown);
 }
 
 /* Footer */
